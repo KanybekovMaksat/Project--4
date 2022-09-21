@@ -1,0 +1,79 @@
+.article-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150rem;
+    margin-bottom: 212rem;
+}
+.article-info{
+    width: 890rem;
+    margin-top: 61rem;
+}
+.article-info__txt,ul,h4{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32rem;
+    line-height: 38rem;
+    color: #000000;
+}
+.article-info__list li{
+    margin-top: 30rem;
+}
+h4{
+    margin-top: 40rem;
+    font-weight: 900;
+    text-align: center;
+}
+.article-slide{
+    border: 2rem solid black;
+    border: none;
+    background-repeat: no-repeat;
+}
+.slider-contoler{
+    max-width: 600rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60rem;
+    margin-top: 45rem;
+}
+.prev{
+    width: 50rem;
+    height: 50rem;
+    border: none;
+    background: transparent;
+    margin-right: 45rem;
+}
+.next{
+    width: 50rem;
+    height: 50rem;
+    border: none;
+    background: transparent;
+    margin-left: 45rem;
+}
+.slider-dots_item{
+    cursor: pointer;
+    width: 68rem;
+    height: 68rem;
+    background: #C4C4C4;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: border .5s ease;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+.active,
+.slider-dots_item:hover {
+    border: 2rem solid #000000;
+}
+.footer-about{
+    height: 250rem;
+    background: #2C4E7C;
+    margin-top: 600rem;
+    display: flex;
+    align-items: end;
+}
+
+

@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url(../font/static/Manrope-Regular.ttf);
+}
+.form-main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    position: relative;
+    max-width: 430rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 10rem;
+    box-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    margin: 0 20rem;
+}
+
+.form-container .forms{
+    display: flex;
+    align-items: center;
+    height: 440rem;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.form-container .form{
+    width: 50%;
+    padding: 30rem;
+    background-color: rgb(255, 255, 255);
+    transition: margin-left 0.18s ease;
+}
+
+.form-container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.form-container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.form-container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.form-container.active .forms{
+    height: 600rem;
+}
+.form-container .form .title{
+    font-family: 'Manrope';
+    position: relative;
+    font-size: 27rem;
+    font-weight: 600;
+}
+
+
+.form .input-field{
+    font-family: 'Manrope';
+    position: relative;
+    height: 50rem;
+    width: 100%;
+    margin-top: 30rem;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35rem;
+    border: none;
+    outline: none;
+    font-size: 16rem;
+    border-bottom: 2rem solid #ccc;
+    border-top: 2rem solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23rem;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10rem;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20rem;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8rem -2rem 4rem;
+    accent-color: #4070f4;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14rem;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35rem;
+}
+
+.form .button input{
+    border-radius: 100rem;
+    border: none;
+    color: #fff;
+    font-family: 'Manrope';
+    font-size: 17rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    background-color: #7FB5FF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+.form .login-signup{
+    margin-top: 30rem;
+    text-align: center;
+}
+.footer-form{
+    margin-top: 700rem;
+    height: 250rem;
+    background: #2C4E7C;
+}

@@ -1,0 +1,1 @@
+https://maksat-kanybekov.github.io/practice/
